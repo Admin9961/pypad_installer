@@ -12,7 +12,7 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 
 
 # PyPad Installer
-## Installation Directory - Complete file hierarchy in **%AppData%** (this strategy will also let the program **avoid** admin privileges, since they are known to raise concerns)
+## Installation Directory - Complete file hierarchy in **AppData/Local** (this strategy will also let the program **avoid** admin privileges, since they are known to raise concerns)
 `%LOCALAPPDATA%\pypad\`
 - pypad.exe (main editor)
 - All other files extracted from the embedded archive
