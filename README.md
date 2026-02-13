@@ -9,3 +9,23 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 1. ```pyinstaller --onefile --windowed pypad.py```
 
 ***Be aware***: if Pyinstaller tease you into packing the final PE with UPX, don't do that. The UPX Packer is very good to optimize and deliver compiled binaries but it has been abused by cybercriminals. Due to their actions, all PE packed with UPX get automatically marked as malicious by EDR or VirusTotal services (yes, even if they are innoquos)
+
+Complete deployment roadmap of the installer you will find on this Repository (this strategy is safe cuz we don't need admin privileges anymore) :
+C:\Users\[USER]\
+│
+├── 📁 AppData\
+│   └── 📁 Local\
+│       ├── 📁 pypad\          ← PERMANENT (installation)
+│       │   ├── pypad.exe
+│       │  
+│       │
+│       └── 📁 pypad_setup\    ← TEMPORARY (created & deleted)
+│           └── pypad_x86-64.exe (SFX archive)
+│
+└── 📁 Desktop\
+    └── 📁 PYPAD_Shortcut\     ← USER FACING (shortcuts + docs)
+        ├── PyPad.lnk          → points to: %LOCALAPPDATA%\pypad\pypad.exe
+        ├── LICENSE.txt
+        ├── Documentation.txt
+        ├── uninstall_pypad.bat
+        └── logs.txt
