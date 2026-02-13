@@ -18,12 +18,12 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 - All other files extracted from the embedded archive
 ## Temporary Directory (Deleted After Install)
 `%LOCALAPPDATA%\pypad_setup\`
-- pypad_x86-64.exe (SFX archive)
+- pypad_x86-64.exe (sfx_array.c)
 ## Desktop Shortcut Folder
 `%USERPROFILE%\Desktop\PYPAD_Shortcut\`
 - PyPad.lnk              -> points to %LOCALAPPDATA%\pypad\pypad.exe
-- LICENSE.txt            -> license terms
-- Documentation.txt      -> user documentation
-- uninstall_pypad.bat    -> uninstaller script
-- logs.txt               -> installation log
+- LICENSE.txt            -> license terms (license_array.c)
+- Documentation.txt      -> user documentation (array_documentation.c)
+- uninstall_pypad.bat    -> uninstaller script (referenced in installer.c)
+- logs.txt               -> installation log (track installation flow)
 
