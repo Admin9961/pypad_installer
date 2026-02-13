@@ -1,0 +1,36 @@
+#include <windows.h>
+
+IDI_ICON1 ICON "icon.ico"
+MAINICON ICON "icon.ico"
+1 ICON "icon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Mark Wesker\0"
+            VALUE "FileDescription",  "PyPad Installer\0"
+            VALUE "FileVersion",      "1.0.0.0\0"
+            VALUE "InternalName",     "pypad_installer.exe\0"
+            VALUE "LegalCopyright",   "© 2026 Mark Wesker\0"
+            VALUE "OriginalFilename", "pypad_installer.exe\0"
+            VALUE "ProductName",      "PyPad\0"
+            VALUE "ProductVersion",   "1.0.0.0\0"
+            VALUE "Comments",         "Open source developer: Mark Wesker\0"
+            VALUE "Creator",          "Mark Wesker\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
