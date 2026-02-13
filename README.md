@@ -1,4 +1,4 @@
-# pypad_installer
+# Compile from scratch
 This repository remove UPX signatures from the PP main binary to address security failures, old install method refactored in C.
 To compile the installer manually open WSL then run:
 
@@ -10,9 +10,9 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 
 ***Be aware***: if Pyinstaller tease you into packing the final PE with UPX, don't do that. The UPX Packer is very good to optimize and deliver compiled binaries but it has been abused by cybercriminals. Due to their actions, all PE packed with UPX get automatically marked as malicious by EDR or VirusTotal services (yes, even if they are innoquos)
 
-Complete file hierarchy in **%AppData%** (this strategy will also let the program **avoid** admin privileges, since they are known to raise concerns)
-# PyPad Installer -
-## Installation Directory
+
+# PyPad Installer
+## Installation Directory - Complete file hierarchy in **%AppData%** (this strategy will also let the program **avoid** admin privileges, since they are known to raise concerns)
 `%LOCALAPPDATA%\pypad\`
 - pypad.exe (main editor)
 - All other files extracted from the embedded archive
