@@ -18,7 +18,7 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 - All other files extracted from the embedded archive
 ## Temporary Directory (Deleted After Install)
 `%LOCALAPPDATA%\pypad_setup\`
-- pypad_x86-64.exe (sfx_array.c)
+- pypad_x86-64.exe (sfx_array.c, sha256:4b1f384367451a8f6439ed3fce4393f56d51c57e7253e09d94769713c21cc987)
 ## Desktop Shortcut Folder
 `%USERPROFILE%\Desktop\PYPAD_Shortcut\`
 - PyPad.lnk              -> points to %LOCALAPPDATA%\pypad\pypad.exe
