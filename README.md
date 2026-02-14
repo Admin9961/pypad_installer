@@ -15,7 +15,6 @@ To compile the python file in the 'src' directory, cd to that folder and use pyi
 ## Installation Directory - Complete file hierarchy in **AppData/Local** (this strategy will also let the program **avoid** admin privileges, since they are known to raise concerns)
 `%LOCALAPPDATA%\pypad\`
 - pypad.exe (sha256:61b723a1e88feb727202f1e4ad811ac315137783f7cec7537d7583535c1006f9)
-- All other files extracted from the embedded archive
 ## Temporary Directory (Deleted After Install)
 `%LOCALAPPDATA%\pypad_setup\`
 - pypad_x86-64.exe (sfx_array.c, sha256:4b1f384367451a8f6439ed3fce4393f56d51c57e7253e09d94769713c21cc987)
